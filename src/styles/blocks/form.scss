@@ -11,6 +11,7 @@
   display: flex;
   width: 100%;
   margin-bottom: 16px;
+  position: relative;
 }
 
 .form__row-space__between {
@@ -30,16 +31,41 @@
   color: white;
   border-radius: 4px;
   border: 1px solid #1C945D;
-
+  outline: none;
 }
 
 .form__input:focus {
-  border: 2px solid #1C945D;
+  border: 1px solid #1C945D;
+}
+
+.form__input:focus-visible {
+  border: 1px solid #1C945D;
+}
+
+.form__input-error {
+  border: 1px solid #E15433;
+}
+
+.error {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  min-width: 100%;
+  height: 40px;
+  background-color: #E15433;
+  border-radius: 4px;
+  padding: 8px 16px;
+  color: white;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-field {
   width: 100%;
 }
+
 
 .form-field::placeholder {
   color: #7A8F99;
@@ -54,6 +80,7 @@
 .form__checkbox {
   display: flex;
   width: 32px;
+//   position: relative;
 }
 
 
@@ -73,7 +100,7 @@
   cursor: pointer;
 }
 
-.form__checkbox-input:checked + .form__checkbox-custom  {
+.form__checkbox-input:checked ~ .form__checkbox-custom  {
   background-color: #1C945D;
 }
 
