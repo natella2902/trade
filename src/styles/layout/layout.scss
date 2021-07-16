@@ -142,8 +142,6 @@ button {
   }
 }
 
-
-
 .container {
 //  max-width: 1240px;
   width: 1240px;
@@ -151,7 +149,6 @@ button {
   flex-direction: column;
   height: 100%;
   position: relative;
- // border: 1px solid white;
 
   @include tablets() {
     width: 85%;
