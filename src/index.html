@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.min.css">
+</head>
+<body>
+<div class="wrapper">
+    <section class="section hero">
+        <header class="header">
+            <div class="container header__container">
+                <div class="logo"></div>
+                <button type="button" class="user-enter">
+                    <div class="user-enter__img">
+                    </div>
+                    <span class="user-enter__text">Войти</span>
+                </button>
+            </div>
+        </header>
+        <div class="main">
+            <div class="container">
+
+                <div class="hero__content">
+                    <div class="hero__desc">
+                        <h2 class="title hero__title">Начните торговать прямо сейчас</h2>
+                        <ul class="advantage__list">
+                            <li class="advantage__item">
+                                <div class="advantage__img"></div>
+                                <span class="advantage__text">Нет спреда - торгуйте с прозрачными и точными котировками</span>
+                            </li>
+                            <li class="advantage__item">
+                                <div class="advantage__img"></div>
+                                <span class="advantage__text">Достаточно депозита в $10, чтобы начать торговать</span>
+                            </li>
+                        </ul>
+                        <form class="form__tag">
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <input type="text"
+                                           class="form__input form-field"
+                                           email="email"
+                                           placeholder="Ваш email"
+                                    >
+                                    <div class="error"></div>
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <input type="password"
+                                           class="form__input form-field"
+                                           name="password"
+                                           placeholder="Придумайте пароль">
+                                    <div class="error"></div>
+                                </label>
+                            </div>
+                            <div class="form__row form__row-space__between">
+                                <h3 class="title__currency">Валюта для ввода и вывода средств</h3>
+                                <ul class="currency__list">
+                                    <li class="currency__item">
+                                        <label class="form__radio-lbl" tabindex="0">
+                                            <input class="form__radio" value="P" type="radio" name="get-change" checked>
+                                            <div class="form__radio-custom">P</div>
+                                        </label>
+                                    </li>
+                                    <li class="currency__item">
+                                        <label class="form__radio-lbl" tabindex="1">
+                                            <input class="form__radio" value="S" type="radio" name="get-change">
+                                            <div class="form__radio-custom">S</div>
+                                        </label>
+                                    </li>
+                                    <li class="currency__item">
+                                        <label class="form__radio-lbl" tabindex="2">
+                                            <input class="form__radio" value="E" type="radio" name="get-change">
+                                            <div class="form__radio-custom">E</div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="form__row form__row-space__between">
+                                <label for="agreement" class="form__checkbox">
+                                    <input class="form__checkbox-input" id="agreement" type="checkbox" name="agreement">
+                                    <div class="form__checkbox-custom"></div>
+                                </label>
+                                <span class="form__checkbox-text">
+                                Я совершеннолетний, ознакомился и принимаю соглашение об оказании услуг
+                            </span>
+                            </div>
+                            <div class="form__row">
+                                <div class="form__buttons">
+                                    <button class="btn form__btn">Зарегистрироваться</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="hero__pic">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

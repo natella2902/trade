@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+@import  './layout/variables.scss','./layout/mixins.scss', './layout/layout.scss';
+
+@import "./blocks/hero", "./blocks/header", './blocks/form';

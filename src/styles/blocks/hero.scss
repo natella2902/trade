@@ -1,0 +1,57 @@
+.hero {
+  &__title {
+    // margin-bottom: 40px;
+  }
+}
+
+.hero__content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.hero__desc {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+
+  @include tablets() {
+    width: 100%;
+  }
+}
+
+.hero__pic {
+  width: 60%;
+}
+
+.title {
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.advantage {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    color: #7A8F99;
+    font-weight: normal;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  &__img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    background: url("./pictures/check.png") no-repeat center;
+  }
+
+}
+
+
