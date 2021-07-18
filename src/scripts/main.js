@@ -12,17 +12,18 @@ btn.addEventListener('click', function(e){
     formData.append("to", "n.jelonkina@mail.ru");
 
     if (validateForm(myForm)) {
-        console.log('email', myForm.elements.email.value)
-        console.log("password", myForm.elements.password.value);
-        console.log("currency", myForm.elements.currency.value);
-        console.log("agreement", myForm.elements.agreement.checked);
-
 
         // const xhr = new XMLHttpRequest();
         // xhr.open('POST', '#');
         // xhr.send(formData);
 
         alert('Форма отправлена успешно!')
+
+        myForm.elements.email.value = ''
+        myForm.elements.password.value = ''
+        myForm.elements.currency.value = ''
+        myForm.elements.agreement.checked = ''
+
     }
 })
 
@@ -49,12 +50,14 @@ function validateForm(form) {
 
 function validateField(field) {
     if (!field.checkValidity()) {
-        field.nextElementSibling.textContent = field.validationMessage;
-        field.nextElementSibling.style.display = 'flex';
+        field.nextElementSibling.nextElementSibling.textContent = field.validationMessage;
+        field.nextElementSibling.nextElementSibling.style.display = 'flex';
         field.classList.add('form__input-error')
         return false;
     } else {
-        field.nextElementSibling.textContent = '';
+        field.nextElementSibling.nextElementSibling.textContent = '';
+        field.nextElementSibling.nextElementSibling.style.display = 'none';
+        field.classList.remove('form__input-error')
         return true;
     }
 }

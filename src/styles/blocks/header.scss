@@ -11,6 +11,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  @include minis() {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
 }
 
 .logo {

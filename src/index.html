@@ -13,7 +13,7 @@
         <header class="header">
             <div class="container header__container">
                 <div class="logo"></div>
-                <button type="button" class="user-enter">
+                <button type="button" class="user-enter" tabindex="0">
                     <div class="user-enter__img">
                     </div>
                     <span class="user-enter__text">Войти</span>
@@ -37,63 +37,80 @@
                         </ul>
                         <form class="form__tag" id="myForm">
                             <div class="form__row">
-                                <label class="form__block">
+                                <div class="form-group form__block">
                                     <input type="text"
                                            class="form__input form-field"
                                            name="email"
                                            placeholder="Ваш email"
                                            required
+                                           id="email"
+                                           tabindex="1"
                                     >
+                                    <label for="email" class="form-label">Ваш email</label>
                                     <div class="error"></div>
-                                </label>
+                                </div>
                             </div>
                             <div class="form__row">
-                                <label class="form__block">
+                                <div class="form-group form__block">
                                     <input type="password"
                                            class="form__input form-field"
                                            name="password"
                                            placeholder="Придумайте пароль"
                                            required
                                            minlength="4"
+                                           tabindex="2"
+                                           id="password"
                                     >
+                                    <label for="password" class="form-label">Придумайте пароль</label>
                                     <div class="error"></div>
-                                </label>
-
+                                </div>
                             </div>
                             <div class="form__row form__row-space__between">
                                 <h3 class="title__currency">Валюта для ввода и вывода средств</h3>
                                 <ul class="currency__list">
                                     <li class="currency__item">
-                                        <label class="form__radio-lbl" tabindex="0">
-                                            <input class="form__radio" value="P" type="radio" name="currency" checked>
+                                        <label class="form__radio-lbl" tabindex="3">
+                                            <input class="form__radio"
+                                                   value="P"
+                                                   type="radio"
+                                                   name="currency"
+                                                   checked
+                                            >
                                             <div class="form__radio-custom">P</div>
                                         </label>
                                     </li>
                                     <li class="currency__item">
-                                        <label class="form__radio-lbl" tabindex="1">
-                                            <input class="form__radio" value="S" type="radio" name="currency">
+                                        <label class="form__radio-lbl" tabindex="4">
+                                            <input class="form__radio"
+                                                   value="S"
+                                                   type="radio"
+                                                   name="currency"
+                                            >
                                             <div class="form__radio-custom">S</div>
                                         </label>
                                     </li>
                                     <li class="currency__item">
-                                        <label class="form__radio-lbl" tabindex="2">
-                                            <input class="form__radio" value="E" type="radio" name="currency">
+                                        <label class="form__radio-lbl"  tabindex="5">
+                                            <input class="form__radio"
+                                                   value="E"
+                                                   type="radio"
+                                                   name="currency"
+                                                >
                                             <div class="form__radio-custom">E</div>
                                         </label>
                                     </li>
                                 </ul>
                             </div>
                             <div class="form__row form__row-space__between">
-                                <label for="agreement" class="form__checkbox">
-
+                                <label for="agreement" class="form__checkbox" tabindex="6">
                                     <input class="form__checkbox-input"
                                        id="agreement"
                                        type="checkbox"
                                        name="agreement"
                                        required
                                     >
-                                    <div class="error"></div>
                                     <div class="form__checkbox-custom"></div>
+                                    <div class="error"></div>
                                 </label>
                                 <span class="form__checkbox-text">
                                     Я совершеннолетний, ознакомился и принимаю соглашение об оказании услуг
@@ -101,7 +118,7 @@
                             </div>
                             <div class="form__row">
                                 <div class="form__buttons">
-                                    <button class="btn form__btn" id="btn">Зарегистрироваться</button>
+                                    <button class="btn form__btn" id="btn" tabindex="7">Зарегистрироваться</button>
                                 </div>
                             </div>
                         </form>
