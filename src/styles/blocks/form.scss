@@ -17,7 +17,7 @@
   margin-bottom: 16px;
   position: relative;
 
-  @include minis() {
+  @include phones() {
     margin-bottom: 5px;
   }
 }

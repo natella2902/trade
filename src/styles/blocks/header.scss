@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: space-between;
 
-  @include minis() {
+  @include phones() {
     margin-top: 10px;
     margin-bottom: 15px;
   }
